@@ -18,7 +18,8 @@ const heights2 = [167, 190, 120, 165, 137];
 let lowest = heights2[0];
 for (let item of heights2) {
   if (lowest > item) {
-lowest=item;}
+    lowest = item;
+  }
 }
 console.log(lowest);
 
@@ -31,6 +32,15 @@ Find the friend with the smallest name.
 ---
 
 */
+
+const heights3 = ["rahim", "robin", "rafi", "ron", "rashed"];
+let smallest = heights3[0];
+for (let item of heights3) {
+  if (smallest.length > item.length) {
+    smallest = item;
+  }
+}
+console.log(smallest);
 
 /*
 
