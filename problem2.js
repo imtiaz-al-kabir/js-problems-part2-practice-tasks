@@ -57,6 +57,20 @@ Write a JavaScript function named `calculateElectronicsBudget` that takes in the
 
 */
 
+function calculateElectronicsBudget(num1,num2,num3){
+
+    return num1+num2+num3;
+}
+
+const laptop = 35000;
+const tablet = 15000;
+const mobile = 20000;
+
+console.log(calculateElectronicsBudget(laptop,tablet,mobile)+" tk");
+
+
+
+
 /*
 ### Task-4: 
 
