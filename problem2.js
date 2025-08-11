@@ -57,19 +57,15 @@ Write a JavaScript function named `calculateElectronicsBudget` that takes in the
 
 */
 
-function calculateElectronicsBudget(num1,num2,num3){
-
-    return num1+num2+num3;
+function calculateElectronicsBudget(num1, num2, num3) {
+  return num1 + num2 + num3;
 }
 
 const laptop = 35000;
 const tablet = 15000;
 const mobile = 20000;
 
-console.log(calculateElectronicsBudget(laptop,tablet,mobile)+" tk");
-
-
-
+console.log(calculateElectronicsBudget(laptop, tablet, mobile) + " tk");
 
 /*
 ### Task-4: 
@@ -92,6 +88,24 @@ You are `given an array of phone objects`, each containing information about the
 ---
 
 */
+
+const phones = [
+  { model: "PhoneA", brand: "Iphone", price: 95000 },
+  { model: "PhoneB", brand: "Samsung", price: 40000 },
+  { model: "PhoneC", brand: "Oppo", price: 26000 },
+  { model: "PhoneD", brand: "Nokia", price: 35000 },
+  { model: "PhoneE", brand: "Iphone", price: 105000 },
+  { model: "PhoneF", brand: "HTC", price: 48000 },
+];
+
+function findAveragePhonePrice(phones) {
+  let average = 0;
+  for (const phone of phones) {
+    average += phone.price;
+  }
+  return average
+}
+console.log(findAveragePhonePrice(phones));
 
 /*
 ### Task -5: (Hard)
